@@ -61,7 +61,7 @@ export const addExperience = (formData, navigate) => async (dispatch) => {
       },
     };
 
-    const res = await axios.post('/api/profile/experience', formData, config);
+    const res = await axios.put('/api/profile/experience', formData, config);
 
     dispatch({
       type: UPDATE_PROFILE,
@@ -94,7 +94,7 @@ export const addEducation = (formData, navigate) => async (dispatch) => {
       },
     };
 
-    const res = await axios.post('/api/profile/education', formData, config);
+    const res = await axios.put('/api/profile/education', formData, config);
 
     dispatch({
       type: UPDATE_PROFILE,
